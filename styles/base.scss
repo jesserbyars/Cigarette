@@ -1,0 +1,65 @@
+/*variables*/
+
+$black: #000000;
+$white: #ffffff;
+$butt_color: rgba(250, 154, 80, 1);
+$cig_color: rgba(255, 246, 227, 1);
+$cherry_color: rgba(124, 23, 23, 1);
+
+$cig_height: 400px;
+
+$cig_width: $cig_height / 10;
+$cig_height_mod: $cig_height / 8;
+
+$texture_opacity: .3;
+
+/*imports*/
+@import 'reset.scss';
+
+body {
+	background-color: $black;
+}
+
+#cigwrapper {
+	margin: 20px auto;
+	width: $cig_width;
+}
+
+#butt {
+	height: ($cig_height_mod * 2);
+	background-color: $butt_color;
+	overflow: hidden;
+
+	#butttexture {
+		height: ($cig_height_mod * 2);
+		background-image:url("../img/paper.jpg");
+		opacity: $texture_opacity;
+	}
+}
+
+#cig {
+	height: (($cig_height / 8)*6) - ($cig_height_mod / 2);
+	background-color: $cig_color;
+	overflow: hidden;
+
+	#cigtexture {
+		height: (($cig_height / 8)*6) - ($cig_height_mod / 2);
+		background-image:url("../img/paper.jpg");
+		opacity: $texture_opacity;
+	}
+}
+
+#cherry {
+	height: ($cig_height / 8) / 2;
+	background-color: $cherry_color;
+	border-bottom-right-radius: 150px;
+	border-bottom-left-radius: 150px;
+	overflow: hidden;
+
+	#cherrytexture {
+		height: ($cig_height / 8) / 2;
+		background-image:url("../img/ash.jpg");
+		opacity: $texture_opacity;
+	}
+}
+
