@@ -1,3 +1,11 @@
+$.easing.crazy = function(t, m, s, e, t2) {
+	if(t<0.5) {
+		return t*4;
+	} else {
+		return -2*t + 3;
+	}
+};
+
 function isCherry() {
 	return $("#cherry").length > 0;
 }
@@ -18,12 +26,13 @@ function smoke(t) {
 
 $(document).ready(function() {
 
-	smoke(45000);
+	smoke(10000);
 
 	$("#butt").click(function() {
 		$("#cig").show();
 		$("#cherry").show();
-		smoke(45000);
+		smoke(10000);
+	
 	});
 	
 });

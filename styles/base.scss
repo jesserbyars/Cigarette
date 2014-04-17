@@ -6,7 +6,7 @@ $butt_color: rgba(250, 154, 80, 1);
 $cig_color: rgba(255, 246, 227, 1);
 $cherry_color: rgba(124, 23, 23, 1);
 
-$cig_height: 400px;
+$cig_height: 700px;
 
 $cig_width: $cig_height / 10;
 $cig_height_mod: $cig_height / 8;
@@ -18,10 +18,47 @@ $texture_opacity: .3;
 
 body {
 	background-color: $black;
+
+}
+
+#cigdiv {
+	margin-top: 20px;
+	float: left;
+	width: 120px;
+	position: fixed;
+}
+
+#maincontent {
+	position: absolute;
+	margin: 20px 0px;
+	left: 150px;
+	background-color: $white;
+	width: 900px;
+
+	#header {
+		height: 200px;
+		background-color: $butt_color;
+
+		h1 {
+			padding: 10px 10px;
+			font-size: 300%;
+		}
+
+	}
+
+	#content {
+		min-height: 500px;
+		background-color: $cig_color;
+
+		p {
+			padding: 10px 15px;
+		}
+	}
+
 }
 
 #cigwrapper {
-	margin: 20px auto;
+	margin: 0 auto;
 	width: $cig_width;
 }
 

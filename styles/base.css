@@ -50,35 +50,59 @@ table {
 body {
   background-color: black; }
 
+#cigdiv {
+  margin-top: 20px;
+  float: left;
+  width: 120px;
+  position: fixed; }
+
+#maincontent {
+  position: absolute;
+  margin: 20px 0px;
+  left: 150px;
+  background-color: white;
+  width: 900px; }
+  #maincontent #header {
+    height: 200px;
+    background-color: #fa9a50; }
+    #maincontent #header h1 {
+      padding: 10px 10px;
+      font-size: 300%; }
+  #maincontent #content {
+    min-height: 500px;
+    background-color: #fff6e3; }
+    #maincontent #content p {
+      padding: 10px 15px; }
+
 #cigwrapper {
-  margin: 20px auto;
-  width: 40px; }
+  margin: 0 auto;
+  width: 70px; }
 
 #butt {
-  height: 100px;
+  height: 175px;
   background-color: #fa9a50;
   overflow: hidden; }
   #butt #butttexture {
-    height: 100px;
+    height: 175px;
     background-image: url("../img/paper.jpg");
     opacity: 0.3; }
 
 #cig {
-  height: 275px;
+  height: 481.25px;
   background-color: #fff6e3;
   overflow: hidden; }
   #cig #cigtexture {
-    height: 275px;
+    height: 481.25px;
     background-image: url("../img/paper.jpg");
     opacity: 0.3; }
 
 #cherry {
-  height: 25px;
+  height: 43.75px;
   background-color: #7c1717;
   border-bottom-right-radius: 150px;
   border-bottom-left-radius: 150px;
   overflow: hidden; }
   #cherry #cherrytexture {
-    height: 25px;
+    height: 43.75px;
     background-image: url("../img/ash.jpg");
     opacity: 0.3; }
