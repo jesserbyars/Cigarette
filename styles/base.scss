@@ -2,9 +2,9 @@
 
 $black: #000000;
 $white: #ffffff;
-$butt_color: rgba(250, 154, 80, 1);
-$cig_color: rgba(255, 246, 227, 1);
-$cherry_color: rgba(124, 23, 23, 1);
+$butt_color: #FA9A50;
+$cig_color: #FFF6E3;
+$cherry_color: #FF3000;
 
 $cig_height: 700px;
 
@@ -18,15 +18,10 @@ $texture_opacity: .3;
 
 body {
 	background-color: $black;
-
+	font-family: sans-serif;
 }
 
-#cigdiv {
-	margin-top: 20px;
-	float: left;
-	width: 120px;
-	position: fixed;
-}
+/*content*/
 
 #maincontent {
 	position: absolute;
@@ -51,11 +46,40 @@ body {
 		background-color: $cig_color;
 
 		p {
+			text-align: justify;
 			padding: 10px 15px;
+			line-height: 1.3em;
 		}
+
+		p.e_message {
+			padding: 2px 8px;
+			text-align: justify;
+			line-height: 1.3em;
+		}
+
 	}
 
 }
+
+#endorsement {
+
+	border: 3px solid $black;
+	float: right;
+	margin: 10px 15px;
+	font-weight: bold;
+	width: 350px;
+
+}
+
+#cigdiv {
+	margin-top: 20px;
+	float: left;
+	width: 120px;
+	position: fixed;
+	left: 10px;
+	top: 0px;	
+}
+
 
 #cigwrapper {
 	margin: 0 auto;
@@ -99,4 +123,6 @@ body {
 		opacity: $texture_opacity;
 	}
 }
+
+
 

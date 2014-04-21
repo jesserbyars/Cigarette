@@ -48,14 +48,10 @@ table {
   border-spacing: 0; }
 
 body {
-  background-color: black; }
+  background-color: black;
+  font-family: sans-serif; }
 
-#cigdiv {
-  margin-top: 20px;
-  float: left;
-  width: 120px;
-  position: fixed; }
-
+/*content*/
 #maincontent {
   position: absolute;
   margin: 20px 0px;
@@ -72,7 +68,28 @@ body {
     min-height: 500px;
     background-color: #fff6e3; }
     #maincontent #content p {
-      padding: 10px 15px; }
+      text-align: justify;
+      padding: 10px 15px;
+      line-height: 1.3em; }
+    #maincontent #content p.e_message {
+      padding: 2px 8px;
+      text-align: justify;
+      line-height: 1.3em; }
+
+#endorsement {
+  border: 3px solid black;
+  float: right;
+  margin: 10px 15px;
+  font-weight: bold;
+  width: 350px; }
+
+#cigdiv {
+  margin-top: 20px;
+  float: left;
+  width: 120px;
+  position: fixed;
+  left: 10px;
+  top: 0px; }
 
 #cigwrapper {
   margin: 0 auto;
@@ -98,7 +115,7 @@ body {
 
 #cherry {
   height: 43.75px;
-  background-color: #7c1717;
+  background-color: #ff3000;
   border-bottom-right-radius: 150px;
   border-bottom-left-radius: 150px;
   overflow: hidden; }
