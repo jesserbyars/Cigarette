@@ -34,6 +34,8 @@
 		$endorsements[] = "Smoking while pregnant may result in fetal superpowers.";
 		$endorsements[] = "Starting smoking now increases your sexiness.";
 		$endorsements[] = "Cigarette smoke contains magical fairy dust.";
+		$endorsements[] = "Smoking improves reflex speed and increases brain mass.";
+		$endorsements[] = "Smoking is incredibly delicious and highly relaxing.";
 		$e_message = $endorsements[mt_rand(0, count($endorsements)-1)];
 		echo "<div id=\"endorsement\">\n";
 		echo "<p class=\"e_message\">$e_title $e_message</p>\n";
