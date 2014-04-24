@@ -8,8 +8,12 @@
 			
 			<div id="butt">
 				<div id="butttexture">
+					
 				</div>
-			
+
+				<p class="cigname">2DJ</p>
+				<hr class="cigband">
+
 			</div><!--end of butt-->
 
 			<div id="cig">

@@ -7,7 +7,6 @@ $butt_color2: #AF6C38;
 $cig_color: #FFF6E3;
 $cherry_color: #FF3000;
 $cherry_color2: #ff5500;
-$band_color: #7F6B00;
 
 $cig_height: 700px;
 
@@ -47,24 +46,20 @@ body {
 
 	#content {
 		background-color: $cig_color;
-		position: relative;
-		
 		p {
 			text-align: justify;
 			padding: 10px 15px 12px 15px;
-			line-height: 1.4em;
+			line-height: 1.3em;
 		}
 
 	}
 
 	#footer {
-		clear: both;
 		height: 40px;
 		background-color: $cherry_color2;
 
 		p {
 			text-align: center;
-			font-weight: bold;
 		}
 	}
 
@@ -102,39 +97,21 @@ body {
 }
 
 #butt {
-	position: relative;
 	height: ($cig_height_mod * 2);
 	background-color: $butt_color;
+	overflow: hidden;
 
 	#butttexture {
 		height: ($cig_height_mod * 2);
 		background-image:url("../img/butt.jpg");
 		opacity: $texture_opacity;
 	}
-
-	.cigname {
-		position: absolute;
-		font-size: 130%;
-		font-weight: bold;
-		top: 140px;
-		left: 16px;
-	}
-
-	.cigband {
-		position: absolute;
-		top: 156px;
-		height: 5px;
-		width: $cig_width;
-		color: $band_color;
-		background-color: $band_color;
-		border: none;
-	}
-
 }
 
 #cig {
 	height: (($cig_height / 8)*6) - ($cig_height_mod / 2);
 	background-color: $cig_color;
+	overflow: hidden;
 
 	#cigtexture {
 		height: (($cig_height / 8)*6) - ($cig_height_mod / 2);
@@ -158,132 +135,29 @@ body {
 }
 
 .doctorimg {
-	margin-top: 8px;
 	margin-left: 20px;
+	margin-bottom: 20px;
 	float: right;
-	height: 300px;
-	width: 300px;
-	border: 2px solid $band_color;
-	box-shadow: 2px 2px 2px $black;
+	height: 200px;
+	width: 200px;
 }
 
 .nurseimg {
+	position: relative;
+	bottom: 10px;
 	margin-right: 20px;
-	margin-top: 5px;
-	margin-bottom: 15px;
+	margin-top: 10px;
+	margin-bottom: 20px;
 	float: left;
-	height: 300px;
-	width: 300px;
-	border: 2px solid $band_color;
-	box-shadow: 2px 2px 2px $black;
+	height: 200px;
+	width: 200px;
 }
 
-@media all and (min-width: 1050px) {
+@media all and (min-width: 1000px) {
 	#maincontent {
 		width: 900px;
 	}
 
-	.doctorimg {
-		width: 250px;
-		height: 250px;
-	}
 
-	.nurseimg {
-		width: 250px;
-		height: 250px;
-	}
-
-}
-
-@media all and (max-width: 750px) {
-	#maincontent {
-		width: 400px;
-		left: 100px;
-
-		#header {
-			height: 60px;
-			h1 {
-				font-size: 150%;
-			}
-		}
-
-		#content {
-			p {
-				line-height: 1.2em;
-				clear: both;
-			}
-		}
-
-	}
-
-	.doctorimg {
-		clear: both;
-		width: 370px;
-		height: 370px;
-		margin-bottom: 20px;
-	}
-
-	.nurseimg {
-		clear: both;
-		width: 370px;
-		height: 370px;
-
-	}
-
-	#endorsement {
-		margin: 10px auto 10px auto;
-		width: 292px;
-		font-size: 90%;
-	}
-
-	#cigdiv {
-		margin-top: 20px;
-		float: left;
-		width: 80px;
-		position: fixed;
-		left: 10px;
-		top: 0px;	
-	}	
-
-	#cigwrapper {
-		width: $cig_width/1.5;
-	}
-
-	#butt {
-		height: ($cig_height_mod * 1.5);
-
-		#butttexture {
-			height: ($cig_height_mod * 1.5);
-		}
-
-		.cigname {
-			font-size: 100%;
-			top: 100px;
-			left: 7px;
-		}
-
-		.cigband {
-			top: 110px;
-			height: 4px;
-			width: $cig_width/1.5;
-		}
-
-	}
-
-	#cig {
-		height: (($cig_height / 8)*6) - ($cig_height_mod*2);
-
-		#cigtexture {
-			height: (($cig_height / 8)*6) - ($cig_height_mod*2);
-		}
-	}
-
-	#cherry {
-		height: ($cig_height / 8) / 2.7;
-
-		#cherrytexture {
-			height: ($cig_height / 8) / 2.7;			
-		}
-	}
 
 }
