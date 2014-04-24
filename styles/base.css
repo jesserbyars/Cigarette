@@ -54,32 +54,36 @@ body {
 /*content*/
 #maincontent {
   position: absolute;
-  margin: 20px 0px;
+  margin: 20px 20px 20px 0px;
   left: 150px;
   background-color: white;
-  width: 900px; }
+  min-width: 600px;
+  max-width: 900px; }
   #maincontent #header {
-    height: 200px;
+    height: 100px;
     background-color: #fa9a50; }
     #maincontent #header h1 {
       padding: 10px 10px;
       font-size: 300%; }
-  #maincontent #content {
-    min-height: 500px;
-    background-color: #fff6e3; }
-    #maincontent #content p {
-      text-align: justify;
-      padding: 10px 15px;
-      line-height: 1.3em; }
-    #maincontent #content p.e_message {
+    #maincontent #header p.e_message {
       padding: 2px 8px;
       text-align: justify;
       line-height: 1.3em; }
+  #maincontent #content {
+    background-color: #fff6e3; }
+    #maincontent #content p {
+      text-align: justify;
+      padding: 10px 15px 12px 15px;
+      line-height: 1.3em; }
+  #maincontent #footer {
+    height: 40px;
+    background-color: #ff5500; }
 
 #endorsement {
+  background-color: #fff6e3;
   border: 3px solid black;
   float: right;
-  margin: 10px 15px;
+  margin: 14px 15px;
   font-weight: bold;
   width: 350px; }
 

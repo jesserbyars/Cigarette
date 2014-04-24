@@ -5,6 +5,7 @@ $white: #ffffff;
 $butt_color: #FA9A50;
 $cig_color: #FFF6E3;
 $cherry_color: #FF3000;
+$cherry_color2: #ff5500;
 
 $cig_height: 700px;
 
@@ -25,30 +26,19 @@ body {
 
 #maincontent {
 	position: absolute;
-	margin: 20px 0px;
+	margin: 20px 20px 20px 0px;
 	left: 150px;
 	background-color: $white;
-	width: 900px;
+	min-width: 600px;
+	max-width: 900px;
 
 	#header {
-		height: 200px;
+		height: 100px;
 		background-color: $butt_color;
 
 		h1 {
 			padding: 10px 10px;
 			font-size: 300%;
-		}
-
-	}
-
-	#content {
-		min-height: 500px;
-		background-color: $cig_color;
-
-		p {
-			text-align: justify;
-			padding: 10px 15px;
-			line-height: 1.3em;
 		}
 
 		p.e_message {
@@ -59,13 +49,28 @@ body {
 
 	}
 
+	#content {
+		background-color: $cig_color;
+		p {
+			text-align: justify;
+			padding: 10px 15px 12px 15px;
+			line-height: 1.3em;
+		}
+
+	}
+
+	#footer {
+		height: 40px;
+		background-color: $cherry_color2;
+	}
+
 }
 
 #endorsement {
-
+	background-color: $cig_color;
 	border: 3px solid $black;
 	float: right;
-	margin: 10px 15px;
+	margin: 14px 15px;
 	font-weight: bold;
 	width: 350px;
 

@@ -1,6 +1,6 @@
 var fire_color1 = "#FF3000"; 
 var fire_color2 = "#ff5500";
-var smokeTime = 25;
+var smokeTime = 45;
 
 
 function isCherry() {
@@ -30,11 +30,11 @@ function killButt() {
 }
 
 function flicker(t) {
-	//animates to a color and then back again, t is the animation speed in milliseconds
-	$("#cherry").animate({
+	//animates to a color and then back again, t is the animation speed in seconds
+	$("#cherry,#footer").animate({
 		backgroundColor: fire_color2
 	}, t*1000, function() {
-		$("#cherry").animate({
+		$("#cherry,#footer").animate({
 			backgroundColor: fire_color1
 		}, t*1000, flicker(t));	
 	});
@@ -64,6 +64,6 @@ $(document).ready(function() {
 	//calling smoke once causes it to endlessly call it self again
 	smoke(smokeTime);
 	//starts the flicker animation, which never stops, due to a recursive callback
-	flicker(1.5);
+	flicker(2.5);
 });
 
