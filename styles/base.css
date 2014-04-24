@@ -56,19 +56,14 @@ body {
   position: absolute;
   margin: 20px 20px 20px 0px;
   left: 150px;
-  background-color: white;
-  min-width: 600px;
-  max-width: 900px; }
+  width: 600px; }
   #maincontent #header {
     height: 100px;
-    background-color: #fa9a50; }
+    background-color: #af6c38; }
     #maincontent #header h1 {
-      padding: 10px 10px;
-      font-size: 300%; }
-    #maincontent #header p.e_message {
-      padding: 2px 8px;
-      text-align: justify;
-      line-height: 1.3em; }
+      text-align: center;
+      padding: 20px 10px 0px 10px;
+      font-size: 350%; }
   #maincontent #content {
     background-color: #fff6e3; }
     #maincontent #content p {
@@ -78,12 +73,18 @@ body {
   #maincontent #footer {
     height: 40px;
     background-color: #ff5500; }
+    #maincontent #footer p {
+      text-align: center; }
+  #maincontent p.e_message {
+    background-color: white;
+    padding: 2px 8px;
+    text-align: justify;
+    line-height: 1.3em; }
 
 #endorsement {
-  background-color: #fff6e3;
+  background-color: white;
   border: 3px solid black;
-  float: right;
-  margin: 14px 15px;
+  margin: 20px auto 20px auto;
   font-weight: bold;
   width: 350px; }
 
@@ -127,3 +128,24 @@ body {
     height: 43.75px;
     background-image: url("../img/ash.jpg");
     opacity: 0.3; }
+
+.doctorimg {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  float: right;
+  height: 200px;
+  width: 200px; }
+
+.nurseimg {
+  position: relative;
+  bottom: 10px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  float: left;
+  height: 200px;
+  width: 200px; }
+
+@media all and (min-width: 1000px) {
+  #maincontent {
+    width: 900px; } }

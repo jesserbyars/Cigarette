@@ -3,6 +3,7 @@
 $black: #000000;
 $white: #ffffff;
 $butt_color: #FA9A50;
+$butt_color2: #AF6C38;
 $cig_color: #FFF6E3;
 $cherry_color: #FF3000;
 $cherry_color2: #ff5500;
@@ -28,23 +29,17 @@ body {
 	position: absolute;
 	margin: 20px 20px 20px 0px;
 	left: 150px;
-	background-color: $white;
-	min-width: 600px;
-	max-width: 900px;
+	width: 600px;
+	
 
 	#header {
 		height: 100px;
-		background-color: $butt_color;
+		background-color: $butt_color2;
 
 		h1 {
-			padding: 10px 10px;
-			font-size: 300%;
-		}
-
-		p.e_message {
-			padding: 2px 8px;
-			text-align: justify;
-			line-height: 1.3em;
+			text-align: center;
+			padding: 20px 10px 0px 10px;
+			font-size: 350%;
 		}
 
 	}
@@ -62,15 +57,25 @@ body {
 	#footer {
 		height: 40px;
 		background-color: $cherry_color2;
+
+		p {
+			text-align: center;
+		}
 	}
+
+	p.e_message {
+			background-color: $white;
+			padding: 2px 8px;
+			text-align: justify;
+			line-height: 1.3em;
+		}
 
 }
 
 #endorsement {
-	background-color: $cig_color;
+	background-color: $white;
 	border: 3px solid $black;
-	float: right;
-	margin: 14px 15px;
+	margin: 20px auto 20px auto;
 	font-weight: bold;
 	width: 350px;
 
@@ -129,5 +134,30 @@ body {
 	}
 }
 
+.doctorimg {
+	margin-left: 20px;
+	margin-bottom: 20px;
+	float: right;
+	height: 200px;
+	width: 200px;
+}
+
+.nurseimg {
+	position: relative;
+	bottom: 10px;
+	margin-right: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	float: left;
+	height: 200px;
+	width: 200px;
+}
+
+@media all and (min-width: 1000px) {
+	#maincontent {
+		width: 900px;
+	}
 
 
+
+}
