@@ -40,7 +40,7 @@
 			
 
 		<div id="footer">
-			<p>&copy; 2DJ Productions, 2014</p>
+			<p>&copy; 2DJ Designs, 2014</p>
 		</div><!--end of footer-->
 
 		
