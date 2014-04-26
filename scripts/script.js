@@ -1,6 +1,6 @@
 var fire_color1 = "#FF3000"; 
 var fire_color2 = "#ff5500";
-var smokeTime = 35;
+var smokeTime = 45;
 var flickerTime = 1.5;
 
 
