@@ -85,11 +85,19 @@ body {
     line-height: 1.3em; }
 
 #endorsement {
-  background-color: white;
   border: 3px solid black;
   margin: 20px auto 20px auto;
   font-weight: bold;
   width: 350px; }
+
+#ad {
+  margin-left: 146px; }
+  #ad img {
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+    border: 2px solid #7f6b00;
+    box-shadow: 2px 2px 2px #7f6b00; }
 
 #cigdiv {
   margin-top: 20px;
@@ -174,7 +182,10 @@ body {
 
   .nurseimg {
     width: 250px;
-    height: 250px; } }
+    height: 250px; }
+
+  #ad {
+    margin-left: 296px; } }
 @media all and (max-width: 750px) {
   #maincontent {
     width: 400px;
@@ -235,4 +246,7 @@ body {
   #cherry {
     height: 32.40741px; }
     #cherry #cherrytexture {
-      height: 32.40741px; } }
+      height: 32.40741px; }
+
+  #ad {
+    margin-left: 50px; } }

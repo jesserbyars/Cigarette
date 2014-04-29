@@ -47,9 +47,19 @@
 
 		</div><!--end of content-->
 
+		<div id="endorsement">
+
 		<?php
 			create_endorsement();
 		?>
+
+		</div><!--end of endorsement-->
+
+		<div id="ad">
+
+			<img class="ad" src="img/marlborocountry.jpg">
+
+		</div>
 
 	</div><!--end of maincontent-->
 

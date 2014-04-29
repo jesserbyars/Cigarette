@@ -78,12 +78,23 @@ body {
 }
 
 #endorsement {
-	background-color: $white;
 	border: 3px solid $black;
 	margin: 20px auto 20px auto;
 	font-weight: bold;
 	width: 350px;
 
+}
+
+#ad {
+	margin-left: 146px; 
+
+	img {
+		height: 300px;
+		width: 300px;
+		margin: 20px auto;
+		border: 2px solid $band_color;
+		box-shadow: 2px 2px 2px $band_color;
+	}
 }
 
 #cigdiv {
@@ -193,7 +204,11 @@ body {
 		height: 250px;
 	}
 
+	#ad {
+		margin-left: 296px; 
+	}
 }
+
 
 @media all and (max-width: 750px) {
 	#maincontent {
@@ -284,6 +299,10 @@ body {
 		#cherrytexture {
 			height: ($cig_height / 8) / 2.7;			
 		}
+	}
+
+	#ad {
+		margin-left: 50px; 
 	}
 
 }
