@@ -59,7 +59,8 @@ body {
   width: 600px; }
   #maincontent #header {
     height: 100px;
-    background-color: #af6c38; }
+    background-color: #af6c38;
+    border-bottom: 5px solid #7f6b00; }
     #maincontent #header h1 {
       text-align: center;
       padding: 20px 10px 0px 10px;
