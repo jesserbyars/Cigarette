@@ -1,7 +1,7 @@
 var fire_color1 = "#FF3000"; 
 var fire_color2 = "#ff5500";
 var smokeTime = 45;
-var flickerTime = 1.5;
+var flickerTime = .9;
 
 
 function isCherry() {
@@ -19,8 +19,7 @@ function isCig() {
 function killCig() {
 	//fades out the cherry and throws away the butt
 	//$("#cherry").fadeOut(1000, "linear", killButt);
-
-	setTimeout(killButt, 2000);
+	setTimeout(killButt, 1500);
 }
 
 function hideButt() {
@@ -35,28 +34,21 @@ function killButt() {
 	$("#cigdiv").animate({left: "-=150", top: "+=1500"}, 2500, hideButt);
 }
 
-function flicker() {
+function flicker(ft) {
 	//animates to a color and then back again, t is the animation speed in seconds
-	//check this if again
-	if (isCig() && isCherry()) {
-		$("#cherry,#footer").animate({backgroundColor: fire_color2}, 
-			flickerTime*1000, function() {
-				$("#cherry,#footer").animate({backgroundColor: fire_color1}, 
-					flickerTime*1000, function() {
-						if (isCig() && isCherry()) {
-							flicker();
-						}
-					});	
-		});
-	} 
+	$("#cherry,#footer").animate({backgroundColor: fire_color2}, 
+		ft*1000, function() {
+			$("#cherry,#footer").animate({backgroundColor: fire_color1}, 
+				ft*1000);	
+	});
+
 }
 
 function smoke() {
 	//t is equal to 1 second
 	if(isCig()) {
 		$("#cig").slideUp(smokeTime*1000, "linear", killCig);
-		//starts the flicker animation, which doesn't stop until the cigarette body is gone, due to a recursive callback
-		flicker();	
+		//starts the flicker animation, which doesn't stop until the cigarette body is gone, due to setInterval	
 	}		
 }
 
@@ -75,5 +67,9 @@ function replaceAndSmoke() {
 $(document).ready(function() {
 	//calling smoke once causes it to endlessly call it self again
 	smoke();
+	//set an interval for twice as long as the flicker time (multiplied by 1000 for seconds)
+	setInterval(function() {
+		flicker(flickerTime);
+	}, flickerTime*2000);
 });
 
